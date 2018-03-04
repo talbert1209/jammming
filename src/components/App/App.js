@@ -54,11 +54,11 @@ class App extends Component {
           <div className="App-playlist">
             <SearchResults
               searchResults={this.state.searchResults}
-              onAdd={this.addTrack}
-              onRemove={this.removeTrack} /> {/*Component*/}
+              onAdd={this.addTrack} /> {/*Component*/}
             <Playlist
               playlistName={this.state.playlistName}
-              playlistTracks={this.state.playlistTracks} /> {/*Component*/}
+              playlistTracks={this.state.playlistTracks}
+              onRemove={this.removeTrack} /> {/*Component*/}
           </div>
         </div>
       </div>
