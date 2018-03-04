@@ -11,9 +11,9 @@ class App extends Component {
     this.state = {
       searchResults: [
         {
-          name: "Name1",
-          artist: "Artist1",
-          album: "Album1"
+          name: "Let's Go Crazy",
+          artist: "Prince",
+          album: "1984"
         }
       ]
     }
@@ -25,7 +25,7 @@ class App extends Component {
         <div className="App">
           <SearchBar /> {/*Component*/}
           <div className="App-playlist">
-            <SearchResults SearchResults={this.state.searchResults} /> {/*Component*/}
+            <SearchResults searchResults={this.state.searchResults} /> {/*Component*/}
             <Playlist /> {/*Component*/}
           </div>
         </div>
