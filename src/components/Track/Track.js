@@ -17,7 +17,7 @@ class Track extends React.Component {
           <h3>Welcome To My House</h3>
           <p>Flo Rida | The Album</p>
         </div>
-        <a className="Track-action">+ or - will go here</a>
+        <a className="Track-action">{this.renderAction()}</a>
       </div>
     );
   }
