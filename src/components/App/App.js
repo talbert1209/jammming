@@ -9,9 +9,13 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      searchResults: ['name', 'artist', 'album'],
-      playlistName: 'My playlist',
-      playlistTracks: []
+      searchResults: [
+        {
+          name: "Name1",
+          artist: "Artist1",
+          album: "Album1"
+        }
+      ]
     }
   }
   render() {
