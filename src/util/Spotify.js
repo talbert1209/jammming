@@ -1,5 +1,5 @@
 const clientID = 'f2e9ffc35fe440dfa4904d55c47a495e';
-const redirectUri = 'http://www.tim-albert.com/jammming/';
+const redirectUri = 'http://www.tim-albert.com/jammming/'; //http://localhost:3000/ | http://www.tim-albert.com/jammming/
 let accessToken;
 
 const Spotify = {
@@ -20,7 +20,7 @@ const Spotify = {
   },
 
   search(term) {
-    const searchUrl = `https://api.spotify.com/v1/search?type=track&q=${term.replace(' ', '%20')}`;
+    const searchUrl = `https://api.spotify.com/v1/search?type=track&q=${term}`;
     return fetch(searchUrl, {
         headers: {
           Authorization: `Bearer ${accessToken}`
